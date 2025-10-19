@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKSA YAPI - Hizmetlerimiz</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>AKSA YAPI</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Ana Sayfa</a></li>
+                <li><a href="/about">Hakkımızda</a></li>
+                <li><a href="/services">Hizmetlerimiz</a></li>
+                <li><a href="/projects">Projelerimiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-content">
+            <h2>Hizmetlerimiz</h2>
+            <div class="services-grid" th:if="${services != null and !services.empty}">
+                <div class="service-card" th:each="service : ${services}">
+                    <h3 th:text="${service.name}">Hizmet Adı</h3>
+                    <p th:text="${service.description}">Hizmet açıklaması</p>
+                </div>
+            </div>
+            <div th:if="${services == null or services.empty}">
+                <p>Henüz hizmet eklenmemiş.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AKSA YAPI. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script th:src="@{/js/script.js}"></script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="tr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>AKSA YAPI - Kaliteli İnşaat Hizmetleri</title>
+    <link rel="icon" type="image/png" href="/images/PNG_LOGO2.png">
+    
+    <!-- Modern Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top modern-navbar" id="mainNavbar">
+    <div class="container d-flex align-items-center">
+        
+        <a class="navbar-brand d-flex align-items-center ps-0 ms-0" href="#home">
+            <img src="/images/PNG_LOGO2.png" alt="AKSA YAPI Logo" class="navbar-logo me-2">
+            <span class="brand-text ">AKSA YAPI</span>
+            
+        </a>
+
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+
+        
+
+        <!-- Sağ taraf: menü -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto d-flex align-items-center ">
+                <!-- Toggler (mobil için) 
+                <li class="nav-item spacer-lg ps-0 ms-0">
+                    <a class="navbar-brand d-flex align-items-center ps-0 ms-0" href="#home">
+                        <img src="/images/PNG_LOGO.png" alt="AKSA YAPI Logo" class="navbar-logo me-2">
+                        <span class="brand-text ">Aksa Yapı</span>
+                    </a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Ana Sayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Hizmetlerimiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projelerimiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#references">Referanslar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+					
+                    <h1 class="hero-title animate-fade-in">AKSA YAPI</h1>
+                    <h2 class="hero-second-title">HAYATİ POLAT</h2>
+                    
+                    <p class="hero-subtitle animate-fade-in-delay">Kaliteli İnşaat Hizmetleri</p>
+                    <div class="hero-buttons animate-fade-in-delay-2">
+                        <a href="#services" class="btn btn-primary btn-lg me-3">Hizmetlerimizi Keşfedin</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg">İletişime Geçin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-header">
+                        <h2 class="section-title">Biz Kimiz?</h2>
+                        <p class="section-subtitle">Güvenilir İnşaat Partneriniz</p>
+                    </div>
+                    <p class="about-text">
+                        Firmamız, inşaat sektöründe güvenilirlik, kalite ve yenilik ilkeleri doğrultusunda hizmet vermeyi amaçlayan bir inşaat şirketidir. <br>
+                         Müşteri memnuniyetini her zaman ön planda tutan ekibimiz, projelerin her aşamasında titizlikle çalışarak hayallerinizi gerçeğe <br>
+                         dönüştürmeyi hedeflemektedir. Modern teknolojiler ve sürdürülebilir çözümlerle, yaşam alanlarınızı daha güzel ve fonksiyonel<br>
+                         hale getiriyoruz. Güçlü referanslarımız ve uzman kadromuzla, güvenle çalışabileceğiniz bir ortak olmak için burada bulunuyoruz. <br>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-award text-primary"></i>
+                            <div>
+                                <h5>Kaliteli Hizmet</h5>
+                                <p>En yüksek standartlarda inşaat hizmetleri</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-users text-primary"></i>
+                            <div>
+                                <h5>Deneyimli Ekip</h5>
+                                <p>Alanında uzman profesyonel kadro</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock text-primary"></i>
+                            <div>
+                                <h5>Zamanında Teslimat</h5>
+                                <p>Projelerinizi planlanan sürede tamamlıyoruz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="İnşaat Projesi" class="img-fluid rounded shadow">
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="row justify-content-center text-center w-100">
+                        <div class="col-4 counter-box">
+                            <div class="counter-wrapper">
+                                <div class="counter" data-target="2">0</div>
+                                <span class="plus">+</span>
+                            </div>
+                            <p>Anahtar Teslim<br>Proje</p>
+                        </div>
+                        <div class="col-4 counter-box">
+                            <div class="counter-wrapper">
+                                <div class="counter" data-target="13">0</div>
+                                <span class="plus">+</span>
+                            </div>
+                            <p>Detaylı<br>Tadilat</p>
+                        </div>
+                        <div class="col-4 counter-box">
+                            <div class="counter-wrapper">
+                                <div class="counter" data-target="14">0</div>
+                                <span class="plus">+</span>
+                            </div>
+                            <p>Basit<br>Tadilat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+    <!-- Services Section -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">Hizmetlerimiz</h2>
+                        <p class="section-subtitle">Geniş Hizmet Yelpazemiz</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Service 1: Konut İnşaatı -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Konut İnşaatı" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3 class="service-title">Konut İnşaatı</h3>
+                        <p class="service-description">Modern ve konforlu konut projeleri ile hayalinizdeki evi inşa ediyoruz.<br> Kaliteli malzemeler ve uzman ekibimizle, güvenli ve dayanıklı konutlar inşa ediyoruz.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check text-primary"></i> Modern mimari tasarım</li>
+                            <li><i class="fas fa-check text-primary"></i> Kaliteli malzemeler</li>
+                            <li><i class="fas fa-check text-primary"></i> Enerji verimli yapılar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 2: Ticari İnşaat -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Ticari İnşaat" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="service-content">
+                        <h3 class="service-title">Ticari İnşaat</h3>
+                        <p class="service-description">Ofis binaları, alışveriş merkezleri ve ticari kompleksler inşa ediyoruz. İş dünyasının ihtiyaçlarına uygun, fonksiyonel ve estetik ticari yapılar tasarlıyoruz.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check text-primary"></i> Ofis binaları</li>
+                            <li><i class="fas fa-check text-primary"></i> Alışveriş merkezleri</li>
+                            <li><i class="fas fa-check text-primary"></i> Ticari kompleksler</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Renovasyon -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Renovasyon" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-content">
+                        <h3 class="service-title">Renovasyon</h3>
+                        <p class="service-description">Mevcut yapılarınızı modern standartlara uygun şekilde yeniliyoruz. Eski binaları çağdaş yaşam standartlarına uygun hale getiriyoruz.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check text-primary"></i> İç mekan renovasyonu</li>
+                            <li><i class="fas fa-check text-primary"></i> Dış cephe yenileme</li>
+                            <li><i class="fas fa-check text-primary"></i> Yapısal güçlendirme</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Proje Tasarımı -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Proje Tasarımı" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="service-content">
+                        <h3 class="service-title">Proje Tasarımı</h3>
+                        <p class="service-description">Mimari tasarım ve mühendislik hizmetleri sunuyoruz. Yaratıcı ve fonksiyonel projelerle hayallerinizi gerçeğe dönüştürüyoruz.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check text-primary"></i> Mimari tasarım</li>
+                            <li><i class="fas fa-check text-primary"></i> Mühendislik hizmetleri</li>
+                            <li><i class="fas fa-check text-primary"></i> 3D görselleştirme</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">Projelerimiz</h2>
+                        <p class="section-subtitle">Öne Çıkan Projelerimiz</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/AlacatiMarina/AlacatiMarinaGirisi2.jpeg" alt="Alaçatı Marina Girişi" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="/proje/alacati-marina" class="btn btn-light">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Alaçatı Marina</h4>
+                            <p> 2024 yılında tamamlandı.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/KioskOtel/KioskOtel.jpeg" alt="kiosk otel can reis grup" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="/proje/kiosk-otel" class="btn btn-light">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Kiosk Otel Can Reis Grup</h4>
+                            <p>2024 - Devam etmektedir</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/SwissOtel/swissotelresidencescesme_genel.jpg" alt="Swiss Otel" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="/proje/swiss-otel" class="btn btn-light">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>Swiss Otel</h4>
+                            <p>2024 yılında tamamlandı.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="/images/InvictusInsaatPort/invictus1.jpeg" alt="İnvictus İnşaat Port" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="/proje/invictus-port" class="btn btn-light">Detayları Gör</a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h4>İnvictus İnşaat Port</h4>
+                            <p>2023 yılında tamamlandı.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- References Section -->
+    <section id="references" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <div class="section-header">
+                        <h2 class="section-title">Referanslarımız</h2>
+                        <p class="section-subtitle">Güvenilir İş Ortaklarımız</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Can Reis -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="reference-card">
+                        <div class="reference-logo">
+                            <img src="/images/Logo/canReis.jpeg" alt="Can Reis Logo" class="img-fluid">
+                        </div>
+                        <div class="reference-content">
+                            <h4>Can Reis</h4>
+                            <p>Denizcilik ve Turizm</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dilek Holding -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="reference-card">
+                        <div class="reference-logo">
+                            <img src="/images/Logo/dilekHolding.jpeg" alt="Dilek Holding Logo" class="img-fluid">
+                        </div>
+                        <div class="reference-content">
+                            <h4>Dilek Holding</h4>
+                            <p>Holding Şirketi</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Filoglu -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="reference-card">
+                        <div class="reference-logo">
+                            <img src="/images/Logo/filoglu.jpeg" alt="Filoglu Logo" class="img-fluid">
+                        </div>
+                        <div class="reference-content">
+                            <h4>Filoglu</h4>
+                            <p>İnşaat ve Yapı</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Invictus -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="reference-card">
+                        <div class="reference-logo">
+                            <img src="/images/Logo/invictus.jpeg" alt="Invictus Logo" class="img-fluid">
+                        </div>
+                        <div class="reference-content">
+                            <h4>Invictus</h4>
+                            <p>Teknoloji ve İnovasyon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Info -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="reference-info">
+                        <h3>Neden Bizimle Çalışmalısınız?</h3>
+                        <p>Güçlü referanslarımız ve uzman kadromuzla, projelerinizi en yüksek kalite standartlarında tamamlıyoruz. Müşteri memnuniyeti bizim önceliğimizdir.</p>
+                        
+                        <div class="row mt-4">
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <i class="fas fa-handshake text-primary"></i>
+                                    <h5>Güvenilir Ortaklık</h5>
+                                    <p>Uzun vadeli iş ortaklıkları kuruyoruz</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <i class="fas fa-star text-primary"></i>
+                                    <h5>Kaliteli Hizmet</h5>
+                                    <p>En yüksek standartlarda hizmet sunuyoruz</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-item">
+                                    <i class="fas fa-clock text-primary"></i>
+                                    <h5>Zamanında Teslimat</h5>
+                                    <p>Projelerinizi planlanan sürede tamamlıyoruz</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <div class="section-header">
+                        <h2 class="section-title">İletişim</h2>
+                        <p class="section-subtitle">Bizimle İletişime Geçin</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Adres</h5>
+                                <p>İzmir, Türkiye</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h5>Telefon</h5>
+                                <p>+90 (544) 635 15 96</p>
+                                <p>+90 (553) 058 88 39</p>
+                            </div>
+                        </div>
+                       
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>E-posta</h5>
+                                <p>info@aksayapi.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-brand">
+                        <i class="fas fa-building me-2"></i>
+                        <span>AKSA YAPI</span>
+                    </div>
+                    <p class="footer-text">Kaliteli inşaat hizmetleri ile hayalinizdeki projeleri gerçeğe dönüştürüyoruz.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-links">
+                        <a href="#home">Ana Sayfa</a>
+                        <a href="#about">Hakkımızda</a>
+                        <a href="#services">Hizmetlerimiz</a>
+                        <a href="#projects">Projelerimiz</a>
+                        <a href="#references">Referanslar</a>
+                        <a href="#contact">İletişim</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-copyright">&copy; 2024 AKSA YAPI. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{/js/script.js}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navbarCollapse = document.getElementById('navbarNav');
+            if (!navbarCollapse) return;
+
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            
+            document.addEventListener('click', function(e) {
+                const isMenuOpen = navbarCollapse.classList.contains('show');
+                const isInsideNavbar = navbarCollapse.contains(e.target) || navbarToggler.contains(e.target);
+
+                if (isMenuOpen && !isInsideNavbar) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
