@@ -100,6 +100,53 @@ function initAnimations() {
     });
 }
 
+function initContactForm() {
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+            
+            let isValid = true;
+            
+            // Clear previous errors
+            [name, email, message].forEach(field => clearFieldError(field));
+            
+            // Validate name
+            if (!name.value.trim()) {
+                showFieldError(name, 'Ad Soyad gereklidir');
+                isValid = false;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim()) {
+                showFieldError(email, 'E-posta gereklidir');
+                isValid = false;
+            } else if (!emailRegex.test(email.value)) {
+                showFieldError(email, 'Geçerli bir e-posta adresi giriniz');
+                isValid = false;
+            }
+            
+            // Validate message
+            if (!message.value.trim()) {
+                showFieldError(message, 'Mesaj gereklidir');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Simulate form submission
+                showNotification('Mesajınız başarıyla gönderildi!', 'success');
+                contactForm.reset();
+            }
+        });
+    }
+}
+
 function showFieldError(field, message) {
     clearFieldError(field);
     
@@ -180,6 +227,9 @@ function initScrollEffects() {
                 counterObserver.unobserve(entry.target);
             }
         });
+    }, {
+        threshold: 0.5,
+        rootMargin: '0px 0px -50px 0px'
     });
     
     counters.forEach(counter => {
@@ -190,19 +240,29 @@ function initScrollEffects() {
 
 function animateCounter(element) {
     const target = parseInt(element.getAttribute('data-target'));
-    const duration = 2000; 
-    const increment = target / (duration / 16); 
-    let current = 0;
+    if (isNaN(target) || target <= 0) return;
     
-    const timer = setInterval(() => {
-        current += increment;
-        element.textContent = Math.floor(current);
+    const duration = 2000; // 2 seconds
+    const startTime = performance.now();
+    
+    function updateCounter(currentTime) {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
         
-        if (current >= target) {
+        // Easing function for smooth animation
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+        const current = Math.floor(target * easeOutQuart);
+        
+        element.textContent = current;
+        
+        if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+        } else {
             element.textContent = target;
-            clearInterval(timer);
         }
-    }, 16);
+    }
+    
+    requestAnimationFrame(updateCounter);
 }
 
 function debounce(func, wait) {
