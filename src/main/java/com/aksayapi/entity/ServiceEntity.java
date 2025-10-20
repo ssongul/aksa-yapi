@@ -1,23 +1,19 @@
 package com.aksayapi.entity;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "services")
 public class ServiceEntity {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
-    @Column(nullable = false)
     private String name;
-    
-    @Column(columnDefinition = "TEXT")
     private String description;
     
     // Constructors
     public ServiceEntity() {}
+    
+    public ServiceEntity(Long id, String name, String description) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
     
     public ServiceEntity(String name, String description) {
         this.name = name;

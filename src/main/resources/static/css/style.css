@@ -34,7 +34,7 @@
     margin: 0;
   }
   
-/* Modern CSS Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -63,13 +63,13 @@ body {
     overflow-x: hidden;
 }
 
-/* Add gentle horizontal padding so content isn't flush with edges */
+
 .container {
     padding-left: 1.5rem;
     padding-right: 1rem;
 }
 
-/* Modern Transparent Navbar */
+
 .modern-navbar {
     background: transparent;
     backdrop-filter: none;
@@ -105,7 +105,7 @@ body {
 }
 
 .spacer-lg {
-    /* İhtiyacınıza göre değeri artırabilirsiniz (örneğin 5rem, 6rem) */
+    
     margin-right: 22rem !important; 
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 .modern-navbar.scrolled .navbar-logo {
-    height: 35px; /* Scroll'da daha küçük olsun */
+    height: 35px; 
 }
 
 .navbar-brand:hover .navbar-logo {
@@ -145,12 +145,12 @@ body {
     padding-left: 0;
     margin-bottom: 0;
 }
-/* Ensure no bullets on navbar items */
+
 .navbar-nav .nav-item {
     list-style: none !important;
 }
 
-/* brand stays left; remove previous spacing hack */
+
 .navbar-logo, .brand-text { 
     margin-right: 0; 
 }
@@ -195,7 +195,7 @@ body {
     box-shadow: none;
 }
 
-/* Hero Section */
+
 .hero-section {
     min-height: 100vh;
     background: url('/images/main-page.jpg') center center/cover no-repeat;
@@ -331,7 +331,7 @@ body {
     }
 }
 
-/* Animations */
+
 .animate-fade-in {
     animation: fadeInUp 1s ease-out;
 }
@@ -355,7 +355,7 @@ body {
     }
 }
 
-/* Section Styles */
+
 .section-padding {
     padding: 5rem 0;
 }
@@ -388,25 +388,19 @@ body {
 .section-subtitle {
     font-size: 1.125rem;
     
-    /* Değişiklik: Yazı rengi beyaz yapıldı */
     color: var(--white); 
     
     font-weight: 400;
     
-    /* Değişiklik: Siyah arka plan eklendi */
     background-color: var(--text-dark); 
     
-    /* Arka planı metinle sınırlamak için */
     display: inline-block; 
     
-    /* Okunurluğu artırmak için iç boşluk (dolgu) eklendi */
     padding: 0.3rem 0.75rem; 
     
-    /* Daha yumuşak bir görünüm için köşeler yuvarlatıldı */
     border-radius: var(--border-radius); 
 }
 
-/* About Section */
 .about-text {
     font-size: 1.125rem;
     color: var(--text-light);
@@ -414,7 +408,6 @@ body {
     line-height: 1.8;
 }
 
-/* Stats/Counters below About */
 .stat-item {
     background: transparent;
     border: none;
@@ -491,7 +484,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Service Content Styles */
 .service-content {
     padding: 2rem 0;
 }
@@ -542,7 +534,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Service Images */
 .service-content img {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
@@ -554,7 +545,6 @@ body {
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-/* Responsive adjustments for services */
 @media (max-width: 768px) {
     .service-title {
         font-size: 1.75rem;
@@ -575,7 +565,6 @@ body {
     }
 }
 
-/* Project Cards */
 .project-card {
     background: var(--white);
     border-radius: var(--border-radius);
@@ -641,7 +630,6 @@ body {
     margin: 0;
 }
 
-/* Contact Section */
 .contact-info {
     margin-bottom: 2rem;
 }
@@ -716,7 +704,6 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* Footer */
 .footer {
     background: var(--text-dark);
     color: var(--white);
@@ -770,7 +757,6 @@ body {
     text-align: center;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .hero-title {
         font-size: 3.5rem;
@@ -939,12 +925,10 @@ body {
     }
 }
 
-/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* Loading Animation */
 .loading {
     opacity: 0;
     transform: translateY(20px);
@@ -956,7 +940,6 @@ html {
     transform: translateY(0);
 }
 
-/* Utility Classes */
 .text-gradient {
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
@@ -976,7 +959,6 @@ html {
     box-shadow: var(--shadow-lg);
 }
 
-/* References Page Styles */
 .page-header {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: var(--white);
@@ -1093,7 +1075,6 @@ html {
     font-size: 0.9rem;
 }
 
-/* Responsive adjustments for references */
 @media (max-width: 768px) {
     .page-title {
         font-size: 2rem;

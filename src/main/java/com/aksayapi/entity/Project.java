@@ -1,26 +1,21 @@
 package com.aksayapi.entity;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "projects")
 public class Project {
     
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
-    @Column(nullable = false)
     private String name;
-    
-    @Column(columnDefinition = "TEXT")
     private String description;
-    
-    @Column
     private String imageUrl;
     
     // Constructors
     public Project() {}
+    
+    public Project(Long id, String name, String description, String imageUrl) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.imageUrl = imageUrl;
+    }
     
     public Project(String name, String description, String imageUrl) {
         this.name = name;
