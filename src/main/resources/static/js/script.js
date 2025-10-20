@@ -92,7 +92,7 @@ function initAnimations() {
         });
     }, observerOptions);
     
-    // Observe elements for animation
+    
     const animateElements = document.querySelectorAll('.service-card, .project-card, .feature-item, .contact-item');
     animateElements.forEach(el => {
         el.classList.add('loading');
@@ -119,7 +119,7 @@ function clearFieldError(field) {
 }
 
 function showNotification(message, type = 'info') {
-    // Remove existing notifications
+    
     const existingNotifications = document.querySelectorAll('.notification');
     existingNotifications.forEach(notification => notification.remove());
  
@@ -150,7 +150,7 @@ function showNotification(message, type = 'info') {
 
     document.body.appendChild(notification);
     
-    // Auto remove after 5 seconds
+    
     setTimeout(() => {
         if (notification.parentNode) {
             notification.style.animation = 'slideOutRight 0.3s ease-in';
@@ -161,7 +161,7 @@ function showNotification(message, type = 'info') {
 
 
 function initScrollEffects() {
-    // Parallax effect for hero section
+    
     window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
         const heroSection = document.querySelector('.hero-section');
@@ -187,11 +187,11 @@ function initScrollEffects() {
     });
 }
 
-// Animate counter
+
 function animateCounter(element) {
     const target = parseInt(element.getAttribute('data-target'));
-    const duration = 2000; // 2 seconds
-    const increment = target / (duration / 16); // 60fps
+    const duration = 2000; 
+    const increment = target / (duration / 16); 
     let current = 0;
     
     const timer = setInterval(() => {
