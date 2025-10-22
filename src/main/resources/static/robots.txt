@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://aksa-yapi.onrender.com/sitemap.xml
