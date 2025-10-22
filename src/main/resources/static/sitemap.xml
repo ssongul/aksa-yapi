@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Home Page -->
+   
     <url>
         <loc>https://aksa-yapi.onrender.com/</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
@@ -8,54 +8,30 @@
         <priority>1.0</priority>
     </url>
 
-    <!-- About Page -->
+    
     <url>
-        <loc>https://aksa-yapi.onrender.com/about</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Services Page -->
-    <url>
-        <loc>https://aksa-yapi.onrender.com/services</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Projects Page -->
-    <url>
-        <loc>https://aksa-yapi.onrender.com/projects</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Individual Projects -->
-    <url>
-        <loc>https://aksa-yapi.onrender.com/project/alacati-marina</loc>
+        <loc>https://aksa-yapi.onrender.com/proje/alacati-marina</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://aksa-yapi.onrender.com/project/kiosk-otel</loc>
+        <loc>https://aksa-yapi.onrender.com/proje/kiosk-otel</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://aksa-yapi.onrender.com/project/swiss-otel</loc>
+        <loc>https://aksa-yapi.onrender.com/proje/swiss-otel</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://aksa-yapi.onrender.com/project/invictus-port</loc>
+        <loc>https://aksa-yapi.onrender.com/proje/invictus-port</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
