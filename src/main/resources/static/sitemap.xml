@@ -3,43 +3,113 @@
    
     <url>
         <loc>https://www.aksayapiproje.com</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/about</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/projects</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/services</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 
     
     <url>
         <loc>https://www.aksayapiproje.com/proje/alacati-marina</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://www.aksayapiproje.com/proje/kiosk-otel</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://www.aksayapiproje.com/proje/swiss-otel</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://www.aksayapiproje.com/proje/invictus-port</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
         <loc>https://www.aksayapiproje.com/proje/ciftlikkoy-villa</loc>
-        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/ozgekent-evleri</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/nohutalan-evi</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/cesme-tadilat</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/dalyan-villa1</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/dalyan-villa2</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/ozgekent-sitesi1</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/ozgekent-sitesi2</loc>
+        <lastmod>2025-01-15T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>

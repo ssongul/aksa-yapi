@@ -54,4 +54,16 @@ public class ProjectController {
     public String dalyanVilla1(Model model) {
         return "project-dalyan-villa1";
     }
+    @GetMapping("/proje/dalyan-villa2")
+    public String dalyanVilla2(Model model) {
+        return "project-dalyan-villa2";
+    }
+    @GetMapping("/proje/ozgekent-sitesi1")
+    public String ozgekentSitesi1(Model model) {
+        return "project-ozgekent-sitesi1";
+    }
+    @GetMapping("/proje/ozgekent-sitesi2")
+    public String ozgekentSitesi2(Model model) {
+        return "project-ozgekent-sitesi2";
+    }
 }
