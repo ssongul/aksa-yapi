@@ -11,8 +11,4 @@ public class HomeController {
         return "index";
     }
     
-    @GetMapping("/referanslar")
-    public String references() {
-        return "references";
-    }
 }

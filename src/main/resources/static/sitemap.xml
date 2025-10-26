@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    
     <url>
-        <loc>https://aksa-yapi.onrender.com/</loc>
+        <loc>https://www.aksayapiproje.com</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
@@ -10,28 +10,35 @@
 
     
     <url>
-        <loc>https://aksa-yapi.onrender.com/proje/alacati-marina</loc>
+        <loc>https://www.aksayapiproje.com/proje/alacati-marina</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://aksa-yapi.onrender.com/proje/kiosk-otel</loc>
+        <loc>https://www.aksayapiproje.com/proje/kiosk-otel</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://aksa-yapi.onrender.com/proje/swiss-otel</loc>
+        <loc>https://www.aksayapiproje.com/proje/swiss-otel</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>
     </url>
 
     <url>
-        <loc>https://aksa-yapi.onrender.com/proje/invictus-port</loc>
+        <loc>https://www.aksayapiproje.com/proje/invictus-port</loc>
+        <lastmod>2025-10-20T00:00:00+03:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.aksayapiproje.com/proje/ciftlikkoy-villa</loc>
         <lastmod>2025-10-20T00:00:00+03:00</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.7</priority>

@@ -38,4 +38,20 @@ public class ProjectController {
     public String ciftlikkoyVilla(Model model) {
         return "project-ciftlikkoy-villa";
     }
+    @GetMapping("/proje/ozgekent-evleri")
+    public String ozgekentEvleri(Model model) {
+        return "project-ozgekent-evleri";
+    }
+    @GetMapping("/proje/nohutalan-evi")
+    public String nohutalanEvi(Model model) {
+        return "project-nohutalan-evi";
+    }
+    @GetMapping("/proje/cesme-tadilat")
+    public String cesmeTadilat(Model model) {
+        return "project-cesme-tadilat";
+    }
+    @GetMapping("/proje/dalyan-villa1")
+    public String dalyanVilla1(Model model) {
+        return "project-dalyan-villa1";
+    }
 }
