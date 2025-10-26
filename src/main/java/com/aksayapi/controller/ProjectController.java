@@ -34,4 +34,8 @@ public class ProjectController {
     public String invictusPort(Model model) {
         return "project-invictus-port";
     }
+    @GetMapping("/proje/ciftlikkoy-villa")
+    public String ciftlikkoyVilla(Model model) {
+        return "project-ciftlikkoy-villa";
+    }
 }
